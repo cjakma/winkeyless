@@ -1,0 +1,11 @@
+---
+ID: 397
+post_title: Scroll Lock LED 분리하기 팁
+author: showjean
+post_date: 2014-02-03 14:23:36
+post_excerpt: ""
+layout: post
+permalink: http://winkeyless.com/blog/397
+published: true
+---
+<p><br /></p><p><br /></p><p>ps2avrU 펌웨어에는 기본적으로 S/L LED가 별도로 표시되지 않고 on/off에 따라서 Caps Lock LED가 2번/1번 깜빡이는 것으로 표시됩니다.</p><p><br /></p><p>이를 별도의 위치에 표시하도록 간단한 와이어링으로 개조할 수 있습니다.</p><p><br /></p><p><br /></p><p>1. 펌웨어 변경</p><p>- S/L LED가 별도로 표시되는 펌웨어인 "keymain_NKRO_SL_apart.hex"로 기판의 펌웨어를 변경합니다.</p><p>- ps2avrU firmware 및 utility : http://blog.winkeyless.kr/17</p><p>- 부트로더를 이용한 펌웨어/키맵/매크로 업로드 방법 : http://blog.winkeyless.kr/18</p><p><br /></p><p><br /></p><p>2.0 아래 사진과 같이 LED를 위한 저항을 스위치 쪽에 납땜 할 수 있는 기판이라면 별도의 와이어링이 필요치 않습니다. 표시된 위치에 저항만 납땜을 해주면 LED가 표시됩니다.</p><p style="text-align: left; clear: none; float: none;"><img src="http://winkeyless.com/blog/wp-content/uploads/1/cfile29.uf.24262B4A54462F300FB3D9.jpg" class="aligncenter" width="658" height="347" filename="DSC_9821_2.jpg" filemime="image/jpeg" style="""" /></p><p><br /></p><p><br /></p><p>2. S/L LED의 신호가 출력되는 PD6 핀 확인(MCU에는 각 핀마다 고유의 이름이 있는데 여기서 우리가 찾아야 할 핀의 이름이 PD6 입니다.)</p><p>- 아래 그림의 동그라미 표시한 15번째 핀이 PD6 핀입니다.</p><p>- 각 기판마다 MCU의 방향은 다를 수 있으니 1번 핀을 기준으로 15번째 핀을 잘 확인해주세요.</p><p><br /></p><p style="text-align: left; clear: none; float: none;"><img src="http://winkeyless.com/blog/wp-content/uploads/1/cfile30.uf.2132744F52EFA4B52B922A.jpg" class="aligncenter" width="860" height="746" filename="DSC_9636.jpg" filemime="image/jpeg" /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p>3. 와이어링</p><p>- S/L LED를 표시할 위치(아래 그림에서는 S/L 키)에 다음과 같이 330옴 가량의 저항을 연결하여 PD6 핀과 와이어링 해줍니다.</p><p>- 와이어링 시 PD6 핀과 주위의 핀들이 쇼트가 나지 않도록 주의하세요.</p><p><br /></p><p><br /></p><p style="text-align: left; clear: none; float: none;"><img src="http://winkeyless.com/blog/wp-content/uploads/1/cfile9.uf.212DDA4F52EFA4B62977B4.jpg" class="aligncenter" width="727" height="969" filename="DSC_9640.jpg" filemime="image/jpeg" /></p><p><br /></p><p><br /></p><p><br /></p><p>4. 동작 확인</p><p>- 키보드를 PC와 연결하고 S/L키를 눌러 제대로 동작하는지 확인합니다.</p><p><br /></p><p><br /></p><p>질문은 댓글로 남겨주세요.</p><p><br /></p><p><br /></p><p><br /></p>

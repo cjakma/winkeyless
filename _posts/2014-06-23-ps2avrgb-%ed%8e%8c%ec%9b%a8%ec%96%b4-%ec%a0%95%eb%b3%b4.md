@@ -1,0 +1,11 @@
+---
+ID: 477
+post_title: ps2avrGB 펌웨어 정보
+author: showjean
+post_date: 2014-06-23 06:06:44
+post_excerpt: ""
+layout: post
+permalink: http://winkeyless.com/blog/477
+published: true
+---
+<p>ps2avrGB는 ps2avrU 펌웨어에 RGB LED를 컨트롤할 수 있는 sub MCU를 추가한 펌웨어 입니다.&nbsp;</p><p>대부분의 기능은 ps2avrU와 동일하며 추가적으로 더 손쉽게 키 맵핑 및 커스텀 매크로를 등록할 수 있는 bootMapper Client를 이용한 관리가 가능합니다.</p><p><br /></p><p>ps2avrU 펌웨어 정보 :&nbsp;http://blog.winkeyless.kr/19</p><p><span style="font-size: 9pt; line-height: 1.5; background-color: transparent;"><br /></span></p><p>ps2avrU의 기능 중 '하드웨어 키 맵핑'을 제외한 모든 기능이 동일 합니다.</p><p>단, "하드웨어 메뉴"의 옵션은 부트맵퍼 클라이언트에서 설정 합니다.</p><p><br /></p><p><br /></p><p><b>* RGB LED 지원</b></p><p><br /></p><p>컬러를 자유롭게 변경할 수 있는 RGB LED를 지원합니다.</p><p>이에 관한 모든 설정은 "bootMapper Client"에서 할 수 있고, 밝기와 모드는&nbsp;키보드에서도 직접 변경이 가능합니다.</p><p><br /></p><p>- 모드 변경 : ESC + SHIFT + Caps lock 또는 (LED MODE2)</p><p>: PS/2 연결시 RGB LED가 off 일 경우에만 스위치쪽 full LED가 점등 됩니다.</p><p><br /></p><p>- RGB key event mode 변경</p><p>: ESC + Ctrl + Capslock으로 RGB key event mode 변경</p><p>: 또는 Ctrl + LED_MODE2</p><p><br /></p><p><br /></p><p>- 밝기 변경 : SHIFT+KEY_LED_UP, SHIFT+KEY_LED_DOWN</p><p>: RGB LED의 밝기가 밝아질 수록&nbsp;full LED는 어두워집니다.</p><p>: full LED를 최대 밝기로 이용하고자 할 경우 RGB LED의 밝기는 중간 이하로 설정해야 합니다.</p><p><br /></p><p>컬러 및 기타 세부 설정은 "bootMapper Client"를 통해서 할 수 있습니다.</p><p><br /></p><p>bootMapper Client 사용 법 : http://blog.winkeyless.kr/154</p><div><br /></div><p><br /></p><p><br /></p><p><b>*&nbsp;스위치 full LED</b></p><p><br /></p><p>스위치 full LED의 조절&nbsp;키들은 기본적으로 다음의 위치에 매핑되어 있습니다.</p><p>- LED MODE : FN+Caps lock</p><p>=&gt; LED 모드를 순차적으로 변경합니다.</p><p><br /></p><p>- B.87, B.mini 등 F1~12키가 있는 기판&nbsp;</p><p><span style="background-color: transparent;">:&nbsp;LED BR UP&nbsp;</span>-&gt; FN + =</p><p>: LED BR DOWN&nbsp;-&gt; FN + -</p><p>- B.face B.thumb 등 F1~12키가 없는 기판&nbsp;</p><p>: LED BR UP -&gt; FN + H</p><p>: LED BR DOWN -&gt; FN + G</p><p>=&gt; 밝기를 조절합니다.&nbsp;</p><p><br /></p><p>스위치 LED는 RGB LED의 밝기에 따라서 최대 밝기가 제한 됩니다.</p><p><br /></p><p><br /></p><p><b>* 펌웨어 다운로드 링크</b></p><p><br /></p><p>http://blog.winkeyless.kr/153</p><p><br /></p><p><br /></p><p><br /></p>
